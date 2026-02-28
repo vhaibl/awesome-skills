@@ -59,6 +59,47 @@ AI-движок, который анализирует требования к �
 
 **9.5/10** для быстрого создания контекстно-зависимых дизайн-систем.
 
+## 🤖 Claude Ecosystem
+
+### Claude Code Best Practices
+
+**Тип:** Knowledge Base / CLI Templates  
+**Репо:** [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice)  
+
+#### Описание
+
+П拥 collection лучших практик, конфигураций и шаблонов для Claude Code. Освещает Skills, Agents, Memory, Rules, Hooks, MCP Servers, Plugins и Marketplaces.
+
+#### Что внутри
+
+- ✅ **Skills** — переиспользуемые знания и slash commands (`.claude/skills/`)
+- ✅ **Agents** — кастомные агенты с собственными tool-ами и моделью (`.claude/agents/`)
+- ✅ **Memory** — персистентный контекст через CLAUDE.md и `@path` imports
+- ✅ **Rules** — модульные инструкции в `.claude/rules/*.md`
+- ✅ **Hooks** — скрипты на событиях (`.claude/hooks/`)
+- ✅ **MCP Servers** — подключение внешних инструментов через Model Context Protocol
+- ✅ **Plugins** — готовые пакеты для распространения
+- ✅ **Marketplace** — поиск и установка плагинов
+- ✅ **Sandboxing** — изоляция файлов/сети
+- ✅ **Output Styles** — настраиваемый тон/формат ответов
+
+#### Пример использования
+
+```yaml
+# .claude/agents/senior-reviewer.json
+{
+  "name": "SeniorReviewer",
+  "color": "#FF6B6B",
+  "model": "claude-3-7-sonnet",
+  "tools": ["file_read", "file_write", "shell"],
+  "instructions": "Review code for security and performance"
+}
+```
+
+#### Оценка
+
+**9/10** — essential reference для продвинутых пользователей Claude Code.
+
 ---
 
-*Last updated: 2025-02-27*
+*Last updated: 2025-02-28*
